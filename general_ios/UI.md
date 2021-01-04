@@ -1,0 +1,7 @@
+# UI
+
+## Generate App Icon
+- appicon.co: to generate a `.zip` folder of different sizes
+- thenounproject.com: to get nice icons
+- codebeautify.org/base64-to-image-converter: Convert base64 string to png
+- canva.com: To create nice art. Got free custom dimensions. Top right of the page: Create a design -> custom dimensions -> 1024x1024px -> create new design
