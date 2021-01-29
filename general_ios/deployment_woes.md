@@ -32,3 +32,7 @@ Sometimes you would have some double IBActions links, etcs... this can be fixed 
 Please ensure that you close all xcode projects before doing this.
 
 No assistant found: Give xcode sometime to reindex the files, and the assistant view would be available.
+
+
+
+        
