@@ -1,0 +1,13 @@
+# other stuffs
+projects/App Brewery Massive Bundle
+
+# ml models
+**.prototxt
+**.mlmodel
+**.caffemodel
+**.tflite
+
+# Pod builds
+**/Pods
+
+.DS_Store

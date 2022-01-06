@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		575C7E7525A43D6800235DA4 /* deeplabv3_dynamic_range_quant.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 575C7E7425A43D6800235DA4 /* deeplabv3_dynamic_range_quant.tflite */; };
+		575C7E7825A43DAC00235DA4 /* deeplabv3_labels.json in Resources */ = {isa = PBXBuildFile; fileRef = 575C7E7725A43DAC00235DA4 /* deeplabv3_labels.json */; };
+		575C7E7B25A43EF700235DA4 /* ImageSegmentator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C7E7A25A43EF700235DA4 /* ImageSegmentator.swift */; };
+		575C7E8625A4539200235DA4 /* TFLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C7E8525A4539200235DA4 /* TFLiteExtension.swift */; };
+		575C7E8925A45CA200235DA4 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C7E8825A45CA200235DA4 /* UIKitExtension.swift */; };
+		57CE4CD025A2C568007336E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CCF25A2C568007336E8 /* AppDelegate.swift */; };
+		57CE4CD225A2C568007336E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CD125A2C568007336E8 /* SceneDelegate.swift */; };
+		57CE4CD425A2C568007336E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CD325A2C568007336E8 /* ViewController.swift */; };
+		57CE4CD725A2C568007336E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4CD525A2C568007336E8 /* Main.storyboard */; };
+		57CE4CD925A2C56B007336E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4CD825A2C56B007336E8 /* Assets.xcassets */; };
+		57CE4CDC25A2C56B007336E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CE4CDA25A2C56B007336E8 /* LaunchScreen.storyboard */; };
+		57CE4CF225A3206C007336E8 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CF125A3206C007336E8 /* CameraFeedManager.swift */; };
+		57CE4CF625A320C0007336E8 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CF525A320C0007336E8 /* PreviewView.swift */; };
+		57CE4CF925A32140007336E8 /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CF825A32140007336E8 /* ModelDataHandler.swift */; };
+		57CE4CFD25A321E6007336E8 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE4CFC25A321E6007336E8 /* CVPixelBufferExtension.swift */; };
+		EF9AC80A428A070BC58522FF /* Pods_HologramSeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2326CDBF44A8FF11CB42D9 /* Pods_HologramSeg.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C2326CDBF44A8FF11CB42D9 /* Pods_HologramSeg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HologramSeg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575C7E7425A43D6800235DA4 /* deeplabv3_dynamic_range_quant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = deeplabv3_dynamic_range_quant.tflite; sourceTree = "<group>"; };
+		575C7E7725A43DAC00235DA4 /* deeplabv3_labels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = deeplabv3_labels.json; sourceTree = "<group>"; };
+		575C7E7A25A43EF700235DA4 /* ImageSegmentator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSegmentator.swift; sourceTree = "<group>"; };
+		575C7E8525A4539200235DA4 /* TFLiteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLiteExtension.swift; sourceTree = "<group>"; };
+		575C7E8825A45CA200235DA4 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		57CE4CCC25A2C568007336E8 /* HologramSeg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HologramSeg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CE4CCF25A2C568007336E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57CE4CD125A2C568007336E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		57CE4CD325A2C568007336E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57CE4CD625A2C568007336E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57CE4CD825A2C56B007336E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57CE4CDB25A2C56B007336E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57CE4CDD25A2C56B007336E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57CE4CF125A3206C007336E8 /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		57CE4CF525A320C0007336E8 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		57CE4CF825A32140007336E8 /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		57CE4CFC25A321E6007336E8 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		CE4935181F407A2D9D4CDCD0 /* Pods-HologramSeg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HologramSeg.debug.xcconfig"; path = "Target Support Files/Pods-HologramSeg/Pods-HologramSeg.debug.xcconfig"; sourceTree = "<group>"; };
+		FC6D8B16C84FF922017DAE8E /* Pods-HologramSeg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HologramSeg.release.xcconfig"; path = "Target Support Files/Pods-HologramSeg/Pods-HologramSeg.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57CE4CC925A2C568007336E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9AC80A428A070BC58522FF /* Pods_HologramSeg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2319EFC9581EF79A2613784B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C2326CDBF44A8FF11CB42D9 /* Pods_HologramSeg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57CE4CC325A2C568007336E8 = {
+			isa = PBXGroup;
+			children = (
+				57CE4CCE25A2C568007336E8 /* HologramSeg */,
+				57CE4CCD25A2C568007336E8 /* Products */,
+				B82E18D34690F99E03EC9AE9 /* Pods */,
+				2319EFC9581EF79A2613784B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57CE4CCD25A2C568007336E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CCC25A2C568007336E8 /* HologramSeg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57CE4CCE25A2C568007336E8 /* HologramSeg */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CFB25A321CF007336E8 /* Extensions */,
+				57CE4CF025A32051007336E8 /* ModelDataHandler */,
+				57CE4CEF25A32001007336E8 /* ViewContollers */,
+				57CE4CEE25A31FF2007336E8 /* Model */,
+				57CE4CEC25A31FD6007336E8 /* Storyboards */,
+				57CE4CEB25A31FC6007336E8 /* CameraFeed */,
+				57CE4CCF25A2C568007336E8 /* AppDelegate.swift */,
+				57CE4CD125A2C568007336E8 /* SceneDelegate.swift */,
+				57CE4CD825A2C56B007336E8 /* Assets.xcassets */,
+				57CE4CDD25A2C56B007336E8 /* Info.plist */,
+			);
+			path = HologramSeg;
+			sourceTree = "<group>";
+		};
+		57CE4CEB25A31FC6007336E8 /* CameraFeed */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CF125A3206C007336E8 /* CameraFeedManager.swift */,
+				57CE4CF525A320C0007336E8 /* PreviewView.swift */,
+			);
+			path = CameraFeed;
+			sourceTree = "<group>";
+		};
+		57CE4CEC25A31FD6007336E8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CD525A2C568007336E8 /* Main.storyboard */,
+				57CE4CDA25A2C56B007336E8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		57CE4CEE25A31FF2007336E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				575C7E7425A43D6800235DA4 /* deeplabv3_dynamic_range_quant.tflite */,
+				575C7E7725A43DAC00235DA4 /* deeplabv3_labels.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57CE4CEF25A32001007336E8 /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CD325A2C568007336E8 /* ViewController.swift */,
+			);
+			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		57CE4CF025A32051007336E8 /* ModelDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CF825A32140007336E8 /* ModelDataHandler.swift */,
+				575C7E7A25A43EF700235DA4 /* ImageSegmentator.swift */,
+			);
+			path = ModelDataHandler;
+			sourceTree = "<group>";
+		};
+		57CE4CFB25A321CF007336E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57CE4CFC25A321E6007336E8 /* CVPixelBufferExtension.swift */,
+				575C7E8525A4539200235DA4 /* TFLiteExtension.swift */,
+				575C7E8825A45CA200235DA4 /* UIKitExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B82E18D34690F99E03EC9AE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE4935181F407A2D9D4CDCD0 /* Pods-HologramSeg.debug.xcconfig */,
+				FC6D8B16C84FF922017DAE8E /* Pods-HologramSeg.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57CE4CCB25A2C568007336E8 /* HologramSeg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57CE4CE025A2C56B007336E8 /* Build configuration list for PBXNativeTarget "HologramSeg" */;
+			buildPhases = (
+				9DB6AEAD6C675AA36B2C271E /* [CP] Check Pods Manifest.lock */,
+				57CE4CC825A2C568007336E8 /* Sources */,
+				57CE4CC925A2C568007336E8 /* Frameworks */,
+				57CE4CCA25A2C568007336E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HologramSeg;
+			productName = HologramSeg;
+			productReference = 57CE4CCC25A2C568007336E8 /* HologramSeg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57CE4CC425A2C568007336E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					57CE4CCB25A2C568007336E8 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 57CE4CC725A2C568007336E8 /* Build configuration list for PBXProject "HologramSeg" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57CE4CC325A2C568007336E8;
+			productRefGroup = 57CE4CCD25A2C568007336E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57CE4CCB25A2C568007336E8 /* HologramSeg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57CE4CCA25A2C568007336E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575C7E7525A43D6800235DA4 /* deeplabv3_dynamic_range_quant.tflite in Resources */,
+				57CE4CDC25A2C56B007336E8 /* LaunchScreen.storyboard in Resources */,
+				57CE4CD925A2C56B007336E8 /* Assets.xcassets in Resources */,
+				575C7E7825A43DAC00235DA4 /* deeplabv3_labels.json in Resources */,
+				57CE4CD725A2C568007336E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DB6AEAD6C675AA36B2C271E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HologramSeg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57CE4CC825A2C568007336E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CE4CF625A320C0007336E8 /* PreviewView.swift in Sources */,
+				57CE4CFD25A321E6007336E8 /* CVPixelBufferExtension.swift in Sources */,
+				575C7E7B25A43EF700235DA4 /* ImageSegmentator.swift in Sources */,
+				57CE4CD425A2C568007336E8 /* ViewController.swift in Sources */,
+				57CE4CF925A32140007336E8 /* ModelDataHandler.swift in Sources */,
+				57CE4CD025A2C568007336E8 /* AppDelegate.swift in Sources */,
+				57CE4CF225A3206C007336E8 /* CameraFeedManager.swift in Sources */,
+				575C7E8625A4539200235DA4 /* TFLiteExtension.swift in Sources */,
+				575C7E8925A45CA200235DA4 /* UIKitExtension.swift in Sources */,
+				57CE4CD225A2C568007336E8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57CE4CD525A2C568007336E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57CE4CD625A2C568007336E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57CE4CDA25A2C56B007336E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57CE4CDB25A2C56B007336E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57CE4CDE25A2C56B007336E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57CE4CDF25A2C56B007336E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57CE4CE125A2C56B007336E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4935181F407A2D9D4CDCD0 /* Pods-HologramSeg.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YT9U9BPTA;
+				INFOPLIST_FILE = HologramSeg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.renjietan.HologramSeg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57CE4CE225A2C56B007336E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6D8B16C84FF922017DAE8E /* Pods-HologramSeg.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YT9U9BPTA;
+				INFOPLIST_FILE = HologramSeg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.renjietan.HologramSeg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57CE4CC725A2C568007336E8 /* Build configuration list for PBXProject "HologramSeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CE4CDE25A2C56B007336E8 /* Debug */,
+				57CE4CDF25A2C56B007336E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57CE4CE025A2C56B007336E8 /* Build configuration list for PBXNativeTarget "HologramSeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CE4CE125A2C56B007336E8 /* Debug */,
+				57CE4CE225A2C56B007336E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57CE4CC425A2C568007336E8 /* Project object */;
+}

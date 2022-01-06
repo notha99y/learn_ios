@@ -27,8 +27,15 @@ pod init # creates a new pod file
 pod install # installs dependencies specified in Podfile and creates xcworkspace
 ```
 
+```bash
+pod repo update # updates the spec repos located at ~/.cocoapods/repos in your home folder.
+```
+
 ## Add Cocoapods to your App
 1. Navigate to the directory where your project lives
 1. run `pod init`
 1. run `pod install`
 1. close any Xcode sessions and use the new `xcworkspace` (the white file instead of the blue one) for the project from now on
+
+## Creating your own cocoapod
+usually if you start from scratch can use this https://guides.cocoapods.org/making/making-a-cocoapod.html

@@ -33,6 +33,8 @@ Please ensure that you close all xcode projects before doing this.
 
 No assistant found: Give xcode sometime to reindex the files, and the assistant view would be available.
 
+## Clean Build
+Sometimes when your build fail, it is because you need to clean build folder. You can do this via Product --> Clean Build Folder
 
-
-        
+## codesign wants to access key "access" in your bunch of keys
+Click allow always and input your computer password
