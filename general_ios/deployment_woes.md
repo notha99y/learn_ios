@@ -38,3 +38,24 @@ Sometimes when your build fail, it is because you need to clean build folder. Yo
 
 ## codesign wants to access key "access" in your bunch of keys
 Click allow always and input your computer password
+
+## Warning: unable to build chain to self-signed root for signer
+There was no need for me to delete all my certs.
+
+[source](https://developer.apple.com/forums/thread/86161)
+
+Identifying the bad certificate:
+
+### From you Keychains select Login
+1. From Category select Certificates
+1. Find any Apple Certificate that has the blue +
+1. Double click on the certificate.
+1. Expand the Trust
+1.If it's messed up then the "When using this certificate" is set to "Always Trust" along with the blue +
+
+### Fixing the bad certificate:
+
+1. Just set it to "Use System Defaults" and close it.
+1. You'll get a pop up. Type in your password to update settings.
+1. Close KeyChain. Go back to your project, clean and run. Problem should have gone away.
+1. If that didn't work then go back to Keychain and just double check and see if there are any other Apple certificates that are set to Always Trust and repeat the process.
